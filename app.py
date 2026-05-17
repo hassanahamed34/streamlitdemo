@@ -1,7 +1,8 @@
 import streamlit as st
 
-st.title("Streamlit Demo App")
-st.header("User Input Section")
+st.title("Retail Business Dashboard")
+
+st.header("Manager Input Section")
 
 st.write("Please provide your details below:")
 
