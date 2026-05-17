@@ -35,7 +35,7 @@ operation_sci = st.selectbox("Choose scientific operation", ["Square Root",
                                                              "Tan"])
 
 value = st.number_input("Enter value", value=0.0)
-if operation_sci = "Power":
+if operation_sci == "Power":
     power = st.number_input("Enter power (if applicable)", value=2.0)
     
 if st.button("Calculate Scientific"):
