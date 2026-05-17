@@ -16,5 +16,4 @@ region = st.selectbox("Select Region:",
 if st.button("Submit"):
     st.success(f"""The sales target entered: {sales} USD.
                    The selected region: {region}""")
-  if sales > 100000:
-    st.write("Great! You have set an ambitious target!")
+
