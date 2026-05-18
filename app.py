@@ -9,7 +9,7 @@ with st.sidebar:
         menu_title = "Menu",
         options = ["Home", "About", "Contact"],
         icons = ["1-circle-fill",
-                 "2-circle-fill",
+                 "2-circle-fill", #"2 in circle with filled colour"
                  "3-circle-fill"],
         menu_icon= "emoji-smile-fill",
         default_index=0,
