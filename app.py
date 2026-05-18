@@ -20,7 +20,9 @@ with col3:
     st.write("Revenue: $1.3M")
 
 # Tabs Layout
-tab1, tab2, tab3 = st.tabs(["Sales Data", "Customer Insights", "Market Trends"])
+tab1, tab2, tab3 = st.tabs(["Sales Data", 
+                            "Customer Insights", 
+                            "Market Trends",])
 with tab1:
     st.write("Content for Sales Data")
     sales_data = {
@@ -31,6 +33,12 @@ with tab1:
     }
     for quarter, revenue in sales_data.items():
         st.write(f"{quarter}: {revenue}")
+
+    # for key in sales_data.keys():
+    #     st.write(f"{key}")
+    # for val in sales_data.values():
+    #     st.write(f"{val}")
+    
 with tab2:
     st.write("Content for Customer Insights")
     customer_feedback = [
@@ -53,6 +61,36 @@ with tab3:
 with st.expander("More Information"):
     st.write("Additional details on data collection methods.")
     st.write("Data was collected through surveys and sales reports.")
+
+    etab1, etab2, etab3 = st.tabs(["Sales Data", 
+                            "Customer Insights", 
+                            "Market Trends",])
+    with etab1:
+    st.write("Content for Sales Data")
+    sales_data = {
+        "Q1 2024": "$1.2M",
+        "Q2 2024": "$1.5M",
+        "Q3 2024": "$1.3M",
+        "Q4 2024": "$1.6M"
+    }
+    for quarter, revenue in sales_data.items():
+        st.write(f"{quarter}: {revenue}")
+
+    # for key in sales_data.keys():
+    #     st.write(f"{key}")
+    # for val in sales_data.values():
+    #     st.write(f"{val}")
+    
+    with etab2:
+        st.write("Content for Customer Insights")
+        customer_feedback = [
+            "Great service!",
+            "Very satisfied with the product quality.",
+            "Quick delivery and excellent support."
+        ]
+        for feedback in customer_feedback:
+            st.write(f"- {feedback}")
+    
 
 # Dynamic Containers
 placeholder = st.empty()
