@@ -66,15 +66,15 @@ with st.expander("More Information"):
                             "Customer Insights", 
                             "Market Trends",])
     with etab1:
-    st.write("Content for Sales Data")
-    sales_data = {
-        "Q1 2024": "$1.2M",
-        "Q2 2024": "$1.5M",
-        "Q3 2024": "$1.3M",
-        "Q4 2024": "$1.6M"
-    }
-    for quarter, revenue in sales_data.items():
-        st.write(f"{quarter}: {revenue}")
+        st.write("Content for Sales Data")
+        sales_data = {
+            "Q1 2024": "$1.2M",
+            "Q2 2024": "$1.5M",
+            "Q3 2024": "$1.3M",
+            "Q4 2024": "$1.6M"
+        }
+        for quarter, revenue in sales_data.items():
+            st.write(f"{quarter}: {revenue}")
 
     # for key in sales_data.keys():
     #     st.write(f"{key}")
