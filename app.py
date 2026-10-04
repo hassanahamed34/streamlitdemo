@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-st.title('Hello, I'm Hassan!')
+st.title("Hello, I'm Hassan!")
 st.write('This is your Python Programming course.')
 
 with st.sidebar:
